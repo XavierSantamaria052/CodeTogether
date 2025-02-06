@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="js/functions.js" defer></script>
+        <title>Tienda Terracota</title>
+    </head>
+    <body>
+        <header class="header">
+            <i><img src="img/Menu.png" alt="Icono Menu" class="header__icon"></i>
+            <img src="img/logo.png" alt="Logo Terracota" class="header__logo">
+            <i><img src="img/Carrito.png" alt="Icono Carrito" class="header__icon"><span class="count_products">0</span></i>
+        </header>
+
+        <main class="main">
+            <section class="main__banner">
+                <h2 class="main__banner--title">Productos Populares</h2>
+                <p class="main__banner--txt">Conoce nuestros productos más recientes.</p>
+            </section>
+
+            <article class="main__products">
+                <div class="main__products--box" id="main_product">
+                    <img src="img/icono img.png" alt="Llavero camara Polaroid" class="box__img">
+                    <h3 class="box__title">Llavero Polaroid</h3>
+                    <p>$<span class="box__txt">80</span></p>
+                    <a href="" class="box__btn" data-id="1">AGREGAR</a>
+                </div>
+                <div class="main__products--box" id="main_product">
+                    <img src="img/icono img.png" alt="Sombrero Chopper" class="box__img">
+                    <h3 class="box__title">Sombrero de Chopper - OnePiece</h3>
+                    <p>$<span class="box__txt">100</span></p>
+                    <a href="" class="box__btn" data-id="2">AGREGAR</a>                
+                </div>
+                <div class="main__products--box" id="main_product">
+                    <img src="img/icono img.png" alt="Ternurin gigante" class="box__img">
+                    <h3 class="box__title">Ternurin gigante</h3>
+                    <p>$<span class="box__txt">2500</span></p>
+                    <a href="" class="box__btn" data-id="3">AGREGAR</a>
+                </div>
+                <div class="main__products--box" id="main_product">
+                    <img src="img/icono img.png" alt="Llavero camara Polaroid" class="box__img">
+                    <h3 class="box__title">Llavero de Kuma - OnePiece</h3>
+                    <p>$<span class="box__txt">80</span></p>
+                    <a href="" class="box__btn" data-id="4">AGREGAR</a>
+                </div>
+                <div class="main__products--box" id="main_product">
+                    <img src="img/icono img.png" alt="Sombrero Chopper" class="box__img">
+                    <h3 class="box__title">Dupe Sonny Ang</h3>
+                    <p>$<span class="box__txt">100</span></p>
+                    <a href="" class="box__btn" data-id="5">AGREGAR</a>
+                </div>
+                <div class="main__products--box" id="main_product">
+                    <img src="img/icono img.png" alt="Ternurin gigante" class="box__img">
+                    <h3 class="box__title">Esferas mdf</h3>
+                    <p>$<span class="box__txt">40</span></p>
+                    <a href="" class="box__btn" data-id="6">AGREGAR</a>
+                </div>
+                <div class="main__products--box" id="main_product">
+                    <img src="img/icono img.png" alt="Llavero camara Polaroid" class="box__img">
+                    <h3 class="box__title">Llavero akuma no mi - OnePiece</h3>
+                    <p>$<span class="box__txt">80</span></p>
+                    <a href="" class="box__btn" data-id="7">AGREGAR</a>
+                </div>
+                <div class="main__products--box" id="main_product">
+                    <img src="img/icono img.png" alt="Sombrero Chopper" class="box__img">
+                    <h3 class="box__title">Sombrero de Luffy - OnePiece</h3>
+                    <p>$<span class="box__txt">60</span></p>
+                    <a href="" class="box__btn" data-id="8">AGREGAR</a>
+                </div>
+                <div class="main__products--box" id="main_product">
+                    <img src="img/icono img.png" alt="Sombrero Chopper" class="box__img">
+                    <h3 class="box__title">Llavero gorro de santa</h3>
+                    <p>$<span class="box__txt">60</span></p>
+                    <a href="" class="box__btn" data-id="9">AGREGAR</a>
+                </div>
+            </article>    
+
+            <article class="main__cart">
+                <p class="main__cart--close">X</p>
+                <h2 class="main__cart--title">CARRITO</h2>
+                <div class="cart__container">
+                    <!-- <section class="cart__article">
+                        <img src="img/icono img.png" alt="img" class="cart__article--img" />
+                        <div class="cart__article--box">
+                            <h4 class="cart__article--txt">Llavero de Kuma - OnePiece</h4>
+                            <span class="cart__article--txt">$80</span>
+                            <h6 class="cart__article--amount"></h6>
+                            <i class="cart__icon"><img src="img/Quitar.png" alt="Icono Quitar" class="cart__delete--icon" data-id="4" /></i>
+                        </div>
+                    </section> -->
+                </div>
+                <h3 class="main__cart--amount">Total: $<span class="main__cart--price"></span></h3> 
+                <button class="main__cart-buy">Comprar</button>
+            </article>  
+        </main>
+    </body>
+</html>

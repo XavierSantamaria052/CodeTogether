@@ -1,0 +1,184 @@
+.header__icon {
+    width: 30px;
+    cursor: pointer;
+    display: inline-block;
+
+}
+
+.main__products {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    /*box-sizing: border-box; contempla el valor padding fusionandolo con el width, no sobre pasa contenedor*/ 
+    box-sizing: $boxSizing;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    
+
+    .main__products--box {
+        cursor: pointer;
+        text-align: center;
+        max-width: 400px;
+        gap: 10px;
+        padding: 20px;
+        background-color: $colorBack;
+        border-radius: 20px;
+        box-shadow: 0 0 5px #303030;
+        transition: 200ms;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    
+        .box__img{
+            width: 200px;
+            margin-bottom: 15px;
+        }
+        
+        .box__title {
+            font-weight: 500;
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+        
+        
+        .box__txt {
+            font-weight: 300;
+            font-size: 15px;
+        }
+
+        .box__btn {
+            border: none;
+            background-color: #a53501;
+            border-radius: 5px;
+            padding: 5px;
+            width: 100px;
+            color:#fafafa;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.60);
+            transition: 200ms;
+            text-decoration: none;
+        }
+
+        .box__btn:hover {
+            background-color: #303030;
+        }
+    }
+
+    .main__products--box:hover {
+        translate: 0 -10px;
+        box-shadow: 0 10px 10px rgb(0, 0, 0,0.505);;
+    }
+}
+
+.main__cart {
+    width: 500px;
+    height: 600px;
+    background-color: #fafafa;
+    padding: 25px;
+    box-sizing: $boxSizing;
+    position: fixed;
+    right: -100%;
+    top: 122px;
+    border-radius: 10px;
+    box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.30);
+    transition: all .25s ease;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+    margin-right: 30px;
+
+    &.show {
+        right: 0;
+    }
+
+    .main__cart--close {
+        width: 25px;
+        line-height: 25px;
+        font-size: 20px;
+        font-weight: 400;
+        background-color: #a53501;
+        text-align: center;
+        border-radius: 100%;
+        aspect-ratio: 1;
+        color: #fafafa;
+        cursor: pointer;
+    }
+
+    .main__cart--title {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 25px 0;
+        box-sizing: $boxSizing;
+    }
+
+    .cart__article {
+        border-bottom: 1px solid #333;
+        @include flex;
+        padding: 15px;
+        box-sizing: $boxSizing;
+        justify-content: center;
+        gap: 10px;
+        border: none;
+    }
+
+    .cart__container {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        border: none;
+        
+
+        .cart__article--img {
+            width: 60px;
+        }
+            
+        .cart__article--box { 
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            padding: 6px;
+            text-align: center;
+            border: none;
+            
+            .cart__article--txt {
+                font-size: small;
+            }
+        
+            .cart__article--amount {
+                font-size: small;
+            }
+    
+            .cart__icon {
+                width: 25px;
+                cursor: pointer;
+            
+            
+                .cart__delete--icon {
+                    width: 25px;
+                }
+            }
+        } 
+    }
+
+    .main__cart--amount {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 25px 0;
+        box-sizing: $boxSizing;
+    }
+
+    .main__cart-buy {
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        background-color: #a53501;
+        border: none;
+        width: 100%;
+        height: 30px;
+        margin-top: 10px;
+    }
+}
